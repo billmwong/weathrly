@@ -1,22 +1,15 @@
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React from 'react';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-  }
+import SearchBarContainer from '../containers/SearchBarContainer';
+import WeatherInfoContainer from '../containers/WeatherInfoContainer';
 
-  render() {
-    return (
-      <div>
-        <p>this is the app component</p>
-      </div>
-    );
-  }
-}
-
-App.propTypes = {
-  location: PropTypes.string.isRequired,
-};
+const App = () => (
+  <div>
+    <h1>Weathrly</h1>
+    <h2>Welcome! Find the weather anywhere in the world:</h2>
+    <SearchBarContainer />
+    <WeatherInfoContainer />
+  </div>
+);
 
 export default App;

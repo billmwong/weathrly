@@ -4,7 +4,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { autoRehydrate, persistStore } from 'redux-persist';
-import AppContainer from './containers/AppContainer';
+import App from './components/App';
 import reducer from './reducers/rootReducer';
 import './stylesheets/styles.css';
 
@@ -21,7 +21,7 @@ persistStore(store);
 
 render(
   <Provider store={store}>
-    <AppContainer />
+    <App />
   </Provider>,
   document.getElementById('container'),
 );

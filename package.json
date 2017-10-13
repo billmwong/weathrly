@@ -11,6 +11,7 @@
   "author": "Bill Wong",
   "dependencies": {
     "express": "^4.16.1",
+    "jquery": "^3.2.1",
     "node": "^8.3.0",
     "path": "^0.12.7",
     "prop-types": "^15.6.0",
