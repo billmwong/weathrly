@@ -29,7 +29,10 @@ const WeatherInfo = ({ weatherData }) => {
 };
 
 WeatherInfo.propTypes = {
-  weatherData: PropTypes.object.isRequired,
+  weatherData: PropTypes.shape({
+    conditions: PropTypes.object,
+    forecast: PropTypes.object,
+  }).isRequired,
 };
 
 export default WeatherInfo;

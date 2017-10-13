@@ -8,5 +8,9 @@
   "globals": {
     "window": false,
     "document": false
+  },
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "no-console": ["error", { "allow": ["error"] }]
   }
 }

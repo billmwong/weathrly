@@ -8,6 +8,7 @@ import App from './components/App';
 import reducer from './reducers/rootReducer';
 import './stylesheets/styles.css';
 
+/* eslint-disable no-underscore-dangle */
 const store = createStore(
   reducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
@@ -16,6 +17,7 @@ const store = createStore(
     autoRehydrate(),
   ),
 );
+/* eslint-enable */
 
 persistStore(store);
 
